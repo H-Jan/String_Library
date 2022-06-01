@@ -1,10 +1,9 @@
-const str = 'hello world'
+const str = 'hello world this is me'
 
-console.log( str[0] )
-console.log( str.length )
-console.log( str.toUpperCase() )
-console.log( str.slice(0) )
-
+// Challenge 1 
+const arr = str.split('')
+arr[0] = arr[0].toUpperCase()
+console.log( arr.join('-') )
 
 function capitalize(string) {
     const first = string[0].toUpperCase()
@@ -13,3 +12,6 @@ function capitalize(string) {
 }
 
 console.log( capitalize(str) )
+
+// Challenge 2
+
