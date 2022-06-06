@@ -35,3 +35,18 @@ function capitalizeWords(str) {
 console.log(capitalizeWords(str))
 console.log(capitalizeWords('Where did everyone go'))
 // Tests show successful capitalization of words
+
+// Challenge 4 - Remove all spaces from the beginning and end of a string with any extra spaces in the middle.
+// Created as function extraSpacesErase()
+
+function extraSpacesErase(str) {
+    const trimmed = str.trim()
+    const chars = trimmed.split(' ')
+    const filtered = chars.filter( (char) => char != '' )
+    const result = filtered.join(' ')
+    return(result)
+}
+
+const example_spaces = '    Hello        World!     '
+
+console.log( extraSpacesErase(example_spaces) )
