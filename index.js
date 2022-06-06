@@ -113,3 +113,45 @@ function shift(str) {
 
 shift_example = "Hello World"
 console.log(shift(shift_example))
+
+// Challenge 9 - makeHashTag(str) converts a given string to a hash tag (#ThisChallenge)
+// Each word in the phrase begins with an uppercase letter
+// Example: input = "Amazing bongo drums for sale". output = "['#Amazing', '#Bongo', '#Drums']"
+
+function makeHashTag(str) {
+    // First lowercase all words for hash tag as per example
+    const capital = capitalizeWords(str)
+    // Split into an array
+    const cap_array = capital.split(' ')
+    // Define empty array to store hashtags
+    const tags_array = []
+    // Create for loop that iterates through each index by factor of 1 for full length of 
+    // current strings array. At each index, ads a '#' symbol
+    for (let i = 0; i < cap_array.length; i += 1) {
+        const hashtag = `#${cap_array[i]}`
+        tags_array.push(hashtag)
+    }
+    return tags_array
+}
+
+hash_tag_example = "Amazing bongo drums"
+console.log(makeHashTag(hash_tag_example))
+
+// Challenge 10 - isEmpty(str) returns 'true' if given string is empty or contains only whitespace (spaces, line returns, tabs)
+// Example: input = "ABC DEF   G". output = false
+
+function isEmpty(str) {
+    // Set isEmpty to true. This is our base case
+    let empty = true
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == ' ' || str[i] == '\n' || str[i] == '\r' || str[i] == '\t'){
+            return true
+        } else {
+            empty = false
+        }
+    }
+    return empty
+}
+
+isEmpty_example = "    "
+console.log(isEmpty(isEmpty_example))
