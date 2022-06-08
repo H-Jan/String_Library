@@ -97,9 +97,9 @@ function makeHashTag(str) {
 // CHALLENGE 10 - isEmpty(str) returns 'true' if given string is empty or contains only whitespace (spaces, line returns, tabs)
 // Example: input = "ABC DEF   G". output = false
 function isEmpty(str) {
-    // Set isEmpty to true. This is our base case
-    let empty = true;
     for (let i = 0; i < str.length; i += 1) {
+        // Set isEmpty to true. This is our base case
+        let empty = true;
         if (str[i] == ' ' || str[i] == '\n' || str[i] == '\r' || str[i] == '\t'){
             return true;
         } else {
