@@ -1,12 +1,26 @@
 {
   "name": "string_library",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H-Jan/String_Library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/H-Jan/String_Library/issues"
+  },
+  "homepage": "https://github.com/H-Jan/String_Library#readme",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^28.1.1"
+  }
 }
